@@ -60,3 +60,48 @@ h2 {font-size: 200%;
             bottom: 1px;
             right: 1px;
 }
+
+                        /******************* GAME AREA *******************/
+
+#game-area {width: 60%;
+            height: 500px;
+            margin: 20px auto;
+            background-color: #484738;
+            position: relative;
+            display: flex;
+}
+
+#player-area {height: 350px;
+              width: 350px;
+              float: left;
+              margin: 75px 30px 75px 50px;
+              border-radius: 10px;
+              overflow: hidden;
+              position: relative;
+              background-color: #00cfff;
+}
+
+#player-area > img {height: 100%;
+                    width: 100%;
+}
+
+#result {min-height: 100px;
+         max-width: 33%;
+         font-size: 150%;
+         margin:auto;
+         /* background-color: #00cfff; */
+}
+
+#ai-area {height: 350px;
+   width: 350px;
+   float: right;
+   margin: 75px 50px 75px 30px;
+   border-radius: 10px;
+   overflow: hidden;
+   position: relative;
+   background-color: #f7906e;
+}
+
+#ai-area > img {height: 100%;
+         width: 100%;
+}
