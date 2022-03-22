@@ -1,4 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Palette+Mosaic&display=swap');
+
 * {margin: 0;
    padding: 0;
    box-sizing: border-box;
+}
+
+body {background-color: #D2D948;
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+}
+
+h1 {font-size: 400%;
+    font-family: 'Palette Mosaic', cursive;
+    color: #f7906e;
+}
+
+#head-title {max-width: 50%;
+             margin: auto;
+             margin-top: 10px;
+             padding: 10px;
 }
