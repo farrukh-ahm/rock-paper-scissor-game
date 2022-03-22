@@ -5,6 +5,8 @@
    box-sizing: border-box;
 }
 
+                                 /***** GENERAL STYLING *******/
+
 body {background-color: #D2D948;
       font-family: 'Pacifico', cursive;
       text-align: center;
@@ -13,10 +15,48 @@ body {background-color: #D2D948;
 h1 {font-size: 400%;
     font-family: 'Palette Mosaic', cursive;
     color: #f7906e;
+    text-transform: uppercase;
 }
+
+h2 {font-size: 200%;
+    text-transform: uppercase;
+}
+
+                                 /********* PAGE TITLE *********/
 
 #head-title {max-width: 50%;
              margin: auto;
              margin-top: 10px;
              padding: 10px;
+}
+
+                                 /******** DECISION BUTTONS *******/
+
+#btn-box {max-width: 50%;
+          min-height: 100px;
+          display: flex;
+          justify-content: center;
+          margin: 10px auto;
+          /* background-color: #f7906e; */
+}
+
+.btn {width: 90px;
+      height: 50px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 2px 2px 3px;
+      display: inline-block;
+      margin: auto;
+      padding: 10px;
+      background-color: #00cfff;
+      font-family: inherit;
+      color: #484738;
+      transition: background-color 0.4s ease-out;
+}
+
+.btn:hover {background-color: #f7906e;
+            box-shadow: 2px 2px 8px;
+            position: relative;
+            bottom: 1px;
+            right: 1px;
 }
