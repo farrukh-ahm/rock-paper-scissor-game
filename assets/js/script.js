@@ -30,10 +30,13 @@ function displayResult(result) {
     if (result === "lost"){
         message.innerHTML = `<h2>You Lost!</h2>`;
         message.style.color = "red";
+        document.getElementById("score").innerText = 0;
     }
     else if (result === "won"){
         message.innerHTML = `<h2>You Won!</h2>`;
         message.style.color = "yellow";
+        let oldScore = parseInt(document.getElementById("score").innerText);
+        document.getElementById("score").innerText = oldScore + 1; 
     }
     else{
         message.innerHTML = `<h2>It's a Tie!</h2>`;
