@@ -5,6 +5,10 @@
    box-sizing: border-box;
 }
 
+:root {
+    --gradient: linear-gradient(45deg, #937DFA, #D67AA7, #ED710C, #D6C200, #91FA97);
+}
+
                                  /***** GENERAL STYLING *******/
 
 body {background-color: #D2D948;
@@ -51,10 +55,11 @@ h2 {font-size: 150%;
       background-color: #00cfff;
       font-family: inherit;
       color: #484738;
-      transition: background-color 0.4s ease-out;
+      transition: background-color 0.5s ease-out;
 }
 
-.btn:hover {background-color: #f7906e;
+.btn:hover, .btn:focus {background-color: #f7906e;
+            cursor: pointer;
             box-shadow: 2px 2px 8px;
             position: relative;
             bottom: 1px;
@@ -66,10 +71,17 @@ h2 {font-size: 150%;
 #game-area {width: 60%;
             height: 500px;
             margin: 20px auto;
-            background-color: #484738;
+            background-image: var(--gradient);
+            background-size: 400%;
             position: relative;
             display: flex;
             border-radius: 20px;
+            animation: bg-animation 20s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
 }
 
 #player-area {height: 350px;
