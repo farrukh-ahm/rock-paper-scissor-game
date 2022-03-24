@@ -18,7 +18,7 @@ h1 {font-size: 400%;
     text-transform: uppercase;
 }
 
-h2 {font-size: 200%;
+h2 {font-size: 150%;
     text-transform: uppercase;
 }
 
@@ -69,6 +69,7 @@ h2 {font-size: 200%;
             background-color: #484738;
             position: relative;
             display: flex;
+            border-radius: 20px;
 }
 
 #player-area {height: 350px;
@@ -87,8 +88,9 @@ h2 {font-size: 200%;
 
 #result {min-height: 100px;
          max-width: 33%;
-         font-size: 150%;
+         /* font-size: 150%; */
          margin:auto;
+         text-shadow: 2px 2px 2px black;
          /* background-color: #00cfff; */
 }
 

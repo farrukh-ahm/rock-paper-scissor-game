@@ -2,11 +2,11 @@
 
 let buttons = document.getElementsByTagName("button");
 let playerArea = document.getElementById("player-area");
-let playerImage = document.getElementById("player-decision");
+let playerImage = document.getElementById("player-image");
 let aiArea = document.getElementById("ai-area");
-let aiImage = document.getElementById("ai-decision");
+let aiImage = document.getElementById("ai-image");
 let message = document.getElementById("result");
-let decisions = ["rock", "paper", "scissor", "paper", "rock", "scissor"];
+let decisions = ["rock", "paper", "scissor"];
 
 for (let button of buttons){
     button.addEventListener("click", function(){
@@ -39,31 +39,31 @@ function displayResult(result) {
         document.getElementById("score").innerText = oldScore + 1; 
     }
     else{
-        message.innerHTML = `<h2>It's a Tie!</h2>`;
+        message.innerHTML = `<h2>It 's a Tie!</h2>`;
         message.style.color = "green";
     }
 }
 
 function rock(){
-    let numberGen = Math.floor(Math.random() * 7)
+    let numberGen = Math.floor(Math.random() * 3)
     let aiDecision = decisions[numberGen]
     playerImage.src = `./assets/images/rock.png`;
     playerImage.alt = "rock";
     aiImage.src = `./assets/images/${aiDecision}.png`;
     aiImage.alt = `${aiDecision}`;
     if (aiDecision === "paper"){
-        displayResult("lost")
+        displayResult("lost");
     }
     else if (aiDecision === "scissor"){
-        displayResult("won")
+        displayResult("won");
     }
     else if (aiDecision === "rock"){
-        displayResult("tied")
+        displayResult("tied");
     }
 }
 
 function paper() {
-    let numberGen = Math.floor(Math.random() * 7);
+    let numberGen = Math.floor(Math.random() * 3);
     let aiDecision = decisions[numberGen];
     playerImage.src = `./assets/images/paper.png`;
     playerImage.alt = "rock";
@@ -81,7 +81,7 @@ function paper() {
 }
 
 function scissor() {
-    let numberGen = Math.floor(Math.random() * 7);
+    let numberGen = Math.floor(Math.random() * 3);
     let aiDecision = decisions[numberGen];
     playerImage.src = `./assets/images/scissor.png`;
     playerImage.alt = "rock";
