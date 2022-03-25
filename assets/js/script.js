@@ -29,18 +29,18 @@ for (let button of buttons){
 function displayResult(result) {
     if (result === "lost"){
         message.innerHTML = `<h2>You Lost!</h2>`;
-        message.style.color = "red";
+        message.style.color = "#f37284";
         document.getElementById("score").innerText = 0;
     }
     else if (result === "won"){
         message.innerHTML = `<h2>You Won!</h2>`;
-        message.style.color = "yellow";
+        message.style.color = "#0053b5";
         let oldScore = parseInt(document.getElementById("score").innerText);
         document.getElementById("score").innerText = oldScore + 1; 
     }
     else{
         message.innerHTML = `<h2>It 's a Tie!</h2>`;
-        message.style.color = "green";
+        message.style.color = "#7fbb68";
     }
 }
 

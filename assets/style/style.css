@@ -7,13 +7,15 @@
 
 :root {
     --gradient: linear-gradient(45deg, #937DFA, #D67AA7, #f98699, #ff9986, #ffb573, #ffd669, #D6C200, #91FA97);
+    --bg-color: linear-gradient(to right top, #e9bad4, #ddbae3, #c7bdf2, #a7c2fc, #7dc8ff, #61cfff, #3ed6ff, #00dcf8, #00e4ec, #00ead6, #00eeb6, #10f08f);
 }
 
                                  /***** GENERAL STYLING *******/
 
-body {background-color: #D2D948;
+body {background-color: #3d67d0;
       font-family: 'Pacifico', cursive;
       text-align: center;
+      /* background-image: var(--bg-color); */
 }
 
 h1 {font-size: 400%;
@@ -91,7 +93,7 @@ h2 {font-size: 150%;
               border-radius: 10px;
               overflow: hidden;
               position: relative;
-              background-color: #00cfff;
+              background-color: rgb(0, 207, 255, 0.2);
 }
 
 #player-area > img {height: 100%;
@@ -101,6 +103,7 @@ h2 {font-size: 150%;
 #result {min-height: 100px;
          max-width: 33%;
          /* font-size: 150%; */
+         color: #f7906e;
          margin:auto;
          text-shadow: 2px 2px 2px black;
          /* background-color: #00cfff; */
@@ -113,7 +116,7 @@ h2 {font-size: 150%;
    border-radius: 10px;
    overflow: hidden;
    position: relative;
-   background-color: #f7906e;
+   background-color: rgb(247, 144, 110, 0.2);
 }
 
 #ai-area > img {height: 100%;
