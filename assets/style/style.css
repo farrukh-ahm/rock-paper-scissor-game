@@ -164,13 +164,66 @@ h2 {font-size: 150%;
 }
 
 @media screen and (max-width: 950px) {
-    #player-area {width: 300px;
+    #game-area {width: 95%;}
+
+    #player-area {width: 290px;
                   height: 300px;
                   margin-top: 100px;
+                  margin-left: 30px;
     }
+
+    #ai-area {width: 290px;
+        height: 300px;
+        margin-top: 100px;
+        margin-right: 30px;
+}
+}
+
+@media screen and (max-width: 800px) {
+
+    #player-area {width: 280px;
+                  height: 280px;
+                  margin-top: 110px;
+}
+
+    #ai-area {width: 280px;
+              height: 280px;
+              margin-top: 110px;
+}
+}
+
+@media screen and (max-width: 680px) {
+    #btn-box {max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {font-size: 300%;}
+
+    #btn-box {max-width: 80%;
+}
+    #game-area {width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+} 
+    #player-area {width: 300px;
+                  height: 300px;
+                  margin: auto;
+                  margin-top: 20px;
+
+    }
+
+    #result {min-height: 100px;
+        max-width: 33%;
+        margin: 0 auto;
+        /* background-color: #00cfff; */
+}
 
     #ai-area {width: 300px;
         height: 300px;
-        margin-top: 100px;
+        margin: auto;
+        margin-bottom: 20px;
+
 }
 }
