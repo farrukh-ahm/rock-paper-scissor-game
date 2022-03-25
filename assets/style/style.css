@@ -6,7 +6,7 @@
 }
 
 :root {
-    --gradient: linear-gradient(45deg, #937DFA, #D67AA7, #ED710C, #D6C200, #91FA97);
+    --gradient: linear-gradient(45deg, #937DFA, #D67AA7, #f98699, #ff9986, #ffb573, #ffd669, #D6C200, #91FA97);
 }
 
                                  /***** GENERAL STYLING *******/
@@ -68,7 +68,7 @@ h2 {font-size: 150%;
 
                         /******************* GAME AREA *******************/
 
-#game-area {width: 60%;
+#game-area {width: 65%;
             height: 500px;
             margin: 20px auto;
             background-image: var(--gradient);
@@ -132,4 +132,45 @@ h2 {font-size: 150%;
 
 #streak {margin: auto;
          color: #484738;
+}
+
+
+                                        /*********** MEDIA QUERY **********/
+
+@media screen and (max-width: 1500px) {
+    #game-area {width: 70%;}
+}
+
+@media screen and (max-width: 1350px) {
+    #game-area {width: 75%;}
+}
+
+@media screen and (max-width: 1220px) {
+    #game-area {width: 80%;}
+
+    #player-area {width: 320px;
+                  height: 320px;
+                  margin-top: 90px;
+}
+
+    #ai-area {width: 320px;
+              height: 320px;
+              margin-top: 90px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #game-area {width: 90%;}
+}
+
+@media screen and (max-width: 950px) {
+    #player-area {width: 300px;
+                  height: 300px;
+                  margin-top: 100px;
+    }
+
+    #ai-area {width: 300px;
+        height: 300px;
+        margin-top: 100px;
+}
 }
