@@ -79,12 +79,24 @@ h2 {font-size: 150%;
             display: flex;
             border-radius: 20px;
             animation: bg-animation 20s infinite alternate;
+            /* opacity: 0.8; */
 }
 
 @keyframes bg-animation {
     0% {background-position: left;}
     100% {background-position: right;}
 }
+
+/* #game-area::after {content: "";
+                   position: absolute;
+                   top: 0;
+                   bottom: 0;
+                   left: 0;
+                   right: 0;
+                   background-color: #3d67d0;
+                   z-index: 1;
+                   opacity: 0.2;
+} */
 
 #player-area {height: 350px;
               width: 350px;
