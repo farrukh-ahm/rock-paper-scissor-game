@@ -195,6 +195,13 @@ h2 {font-size: 150%;
 @media screen and (max-width: 680px) {
     #btn-box {max-width: 80%;
     }
+
+    #player-area {width:300px;
+                  margin-left: 10px;
+    }
+    #ai-area {width: 300px;
+              margin-right: 10px;
+    }
 }
 
 @media screen and (max-width: 500px) {
